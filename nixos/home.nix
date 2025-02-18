@@ -33,6 +33,9 @@
       credential.helper = "manager";
       credential."https://gitlab.com".username = "mp224hv";
       credential.credentialStore = "cache";
+      credential."https://git.swahnlabs.com".provider = "generic";
+      credential."https://git.swahnlabs.com".username = "Max";
+      credential."https://git.swahnlabs.com".email = "m.porseryd@gmail.com"; 
     };
   };
   stylix.targets.hyprland.enable = true; 
@@ -60,6 +63,7 @@
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --flake ~/nixos/ --impure";
       oo = "source /home/xam/nixos/modules/shellscripts/open_vault.sh";
+      alpaca = "bash /home/xam/nixos/modules/shellscripts/alpaca.sh";
     };
 
     initExtra = ''

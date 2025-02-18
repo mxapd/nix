@@ -12,7 +12,10 @@
     xwayland.enable = true;  
     
     settings = {
-      
+      input = {
+      	kb_variant = "altgr-intl";
+      };
+
       general = {
 
 	#"col.active_border" = "rgba(ff0000ff)";
@@ -34,6 +37,7 @@
 	"$modSHIFT,M,exec, hyprctl dispatch exit"
 	"$mod,O,exec, obsidian"
 	"$mod,E,exec, dolphin"
+
 	# Screenshot a window
 	"$mod, PRINT, exec, hyprshot -m window"
 	# Screenshot a monitor
@@ -101,8 +105,9 @@
       ];
 
       monitor = [
-	"DP-3,1920x1080@144.00Hz,0x0,1"
-	#"HDMI-A-1,1920x1080@60.00Hz,-1920x0,1"
+	#"DP-1, 1920x1080@119.88Hz, 0x0,1"
+	"DP-1, 2560x1440@180.00Hz, 0x0,1"
+	"DP-3,1920x1080@144.00Hz,-1920x0,1"
       ];
     };
     

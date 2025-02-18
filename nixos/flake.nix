@@ -30,8 +30,8 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
-        home-manager.nixosModules.home-manager{
-          home-manager.backupFileExtension = "sssbyuissasssssssssasasssssssss";
+	home-manager.nixosModules.home-manager {
+          home-manager.backupFileExtension = "sssbyuissasssdadssssssasasssssssss";
           home-manager.users.xam = import ./home.nix;
           home-manager.sharedModules = [
               nixvim.homeManagerModules.nixvim

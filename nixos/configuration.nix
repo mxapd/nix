@@ -119,6 +119,8 @@
     packages = with pkgs; [
       #linuxKernel.packages.linux_xanmod_latest.virtualbox
       #virtualbox
+      runelite
+      ollama
       piper
       zip
       gotop
@@ -164,8 +166,8 @@
   
   users.extraGroups.vboxusers.members = [ "xam" ];
   
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
+  #virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.guest.dragAndDrop = true;
   
   environment.systemPackages = with pkgs; [
     grim
