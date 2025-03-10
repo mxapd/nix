@@ -9,6 +9,8 @@
     ./plugins/lsp.nix
     ./plugins/obsidian.nix
     ./plugins/alpha-nvim.nix
+    ./plugins/neo-tree.nix
+    ./plugins/wrapping.nix
     #./plugins/dashboard.nix
   ];
 
@@ -25,8 +27,8 @@
       relativenumber = true;
       shiftwidth = 2;
       clipboard = "unnamedplus";
-      colorcolumn = "79";
-      conceallevel = 1;
+      #colorcolumn = "79";
+      conceallevel = 2;
     };
 
     plugins = {
@@ -37,7 +39,9 @@
       luasnip.enable = true;
       which-key.enable = true;
       neoscroll.enable = true;
-      nvim-tree.enable = true;
+      #render-markdown.enable = true;
+      friendly-snippets.enable = true;
+      friendly-snippets.autoLoad= true;
     };
 
     autoGroups = {

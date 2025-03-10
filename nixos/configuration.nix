@@ -9,11 +9,13 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/stylix.nix
+      ./modules/postgresql.nix
     ];
 
 # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   xdg.portal = {
@@ -119,6 +121,7 @@
     packages = with pkgs; [
       #linuxKernel.packages.linux_xanmod_latest.virtualbox
       #virtualbox
+      ladybird
       runelite
       ollama
       piper

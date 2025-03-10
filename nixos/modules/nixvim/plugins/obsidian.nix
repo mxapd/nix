@@ -16,10 +16,11 @@
 	workspaces = [
 	  {
 	    name = "personal";
-	    path = "~/Documents/digitalbraintest/";
+	    path = "~/Documents/digitalbrain/";
 	  }
 	];
-      };  
+      };
     };
   };
 }
+

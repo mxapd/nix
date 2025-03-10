@@ -5,6 +5,8 @@
     image = /home/xam/Pictures/wallhaven.png;
     polarity = "dark";
     opacity.terminal = 0.7;
+    
+    # orange purple gray or something
     base16Scheme = {
       base00 = "151515";
       base01 = "202020";

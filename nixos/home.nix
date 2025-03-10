@@ -47,7 +47,7 @@
   ];
 
   home.sessionVariables = {
-    OBSIDIAN_VAULT = "/home/xam/Documents/digitalbrain_clone";
+    OBSIDIAN_VAULT = "/home/xam/Documents/digitalbrain";
   };
 
   programs.kitty = {
