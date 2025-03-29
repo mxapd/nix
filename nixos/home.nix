@@ -24,6 +24,7 @@
   programs.zoxide.enableZshIntegration = true;
 
   programs.tmux.enable = true;
+  programs.emacs.enable = true;
 
   programs.git = {
     enable = true;
@@ -32,10 +33,8 @@
     extraConfig = {
       credential.helper = "manager";
       credential."https://gitlab.com".username = "mp224hv";
+      credential."https://github.com".username = "mxapd";
       credential.credentialStore = "cache";
-      credential."https://git.swahnlabs.com".provider = "generic";
-      credential."https://git.swahnlabs.com".username = "Max";
-      credential."https://git.swahnlabs.com".email = "m.porseryd@gmail.com"; 
     };
   };
   stylix.targets.hyprland.enable = true; 

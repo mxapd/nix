@@ -17,6 +17,8 @@
     plugins.lsp = {
       enable = true;
       servers = {
+	ccls.enable = true;
+	rust-analyzer.enable = true;
 	jdtls.enable = true;
 	lua_ls.enable = true;
 	pylsp.enable = true;

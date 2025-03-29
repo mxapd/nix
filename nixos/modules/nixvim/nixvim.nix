@@ -11,6 +11,7 @@
     ./plugins/alpha-nvim.nix
     ./plugins/neo-tree.nix
     ./plugins/wrapping.nix
+    ./plugins/conform.nix
     #./plugins/dashboard.nix
   ];
 
@@ -35,7 +36,6 @@
       web-devicons.enable = true;
       bufferline.enable = true;
       lualine.enable = true;
-      conform-nvim.enable = true;
       luasnip.enable = true;
       which-key.enable = true;
       neoscroll.enable = true;
