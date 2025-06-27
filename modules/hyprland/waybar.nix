@@ -23,6 +23,7 @@ with lib;
 	  "hyprland/window"
 	];
         modules-right = [
+	  "custom/room_temp"
 	  "network"
 	  "pulseaudio"
 	  "tray"
@@ -78,6 +79,14 @@ with lib;
 	};
 
 
+	"custom/room_temp" = {
+	    exec = "~/nixos/scripts/room_temp.sh";
+	    interval = 60;
+	    format = "{}";
+	    return-type = "json";
+	};
+
+
       }
     ];
     style = concatStrings [
@@ -118,6 +127,10 @@ with lib;
     min-height: 0;
     opacity: 1.0;
 
+}
+
+#custom-room_temp {
+  margin-right: 25px;
 }
 
 window#waybar {
